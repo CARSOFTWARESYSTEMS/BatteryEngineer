@@ -43,7 +43,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 
 // Mobile menu display trick (toggling visibility)
 function updateMobileMenuVisibility() {
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth <= 1024) {
     mobileMenu.classList.add('visible');
   } else {
     mobileMenu.classList.remove('visible', 'open');
