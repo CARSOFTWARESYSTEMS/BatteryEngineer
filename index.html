@@ -18,10 +18,8 @@
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
     <a href="#home" class="nav-logo">
-      <div class="nav-logo-icon">⚡</div>
       <div class="nav-logo-text">
-        <span class="nav-logo-title">EV Battery Health</span>
-        <span class="nav-logo-sub">& Diagnostics Research</span>
+        <span class="nav-logo-title" style="letter-spacing:1px;font-size:1.1rem;">BATTERY.EV.ENGINEER</span>
       </div>
     </a>
     <ul class="nav-links">
@@ -29,9 +27,14 @@
       <li><a href="#research" class="nav-link">Research</a></li>
       <li><a href="#diagnostics" class="nav-link">Battery Diagnostics</a></li>
       <li><a href="#aiml" class="nav-link">AI / ML</a></li>
-      <li><a href="#technology" class="nav-link">Technology</a></li>
-      <li><a href="#publications" class="nav-link">Publications</a></li>
-      <li><a href="#resources" class="nav-link">Resources</a></li>
+      <li class="nav-dropdown">
+        <span class="nav-link dropdown-toggle">More ▾</span>
+        <div class="dropdown-menu">
+          <a href="#technology" class="dropdown-item">Technology</a>
+          <a href="#publications" class="dropdown-item">Publications</a>
+          <a href="#resources" class="dropdown-item">Resources</a>
+        </div>
+      </li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-actions">
@@ -70,8 +73,9 @@
           Next-Generation Battery Intelligence Platform
         </div>
         <h1 class="hero-title animate-fade-up delay-1">
-          EV Battery<br/>
-          <span class="gradient-text">Health & Diagnostics</span>
+          <span class="text-ev-battery">EV Battery</span><br/>
+          <span class="text-health">Health</span> <span class="text-ampersand">&</span><br/>
+          <span class="text-diagnostics">Diagnostics</span>
         </h1>
         <p class="hero-subtitle animate-fade-up delay-2">
           Advanced Lithium-ion Battery Degradation Research and<br/>Intelligent Battery Health Monitoring Systems
@@ -118,20 +122,19 @@
             <div class="data-node"></div>
           </div>
         </div>
-        <!-- Floating data cards -->
-        <div style="position:absolute;top:10%;left:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:12px 16px;font-size:0.75rem;backdrop-filter:blur(12px);min-width:140px;">
-          <div style="color:var(--accent-green);font-weight:700;margin-bottom:2px;">SOH Status</div>
-          <div style="font-size:1.2rem;font-weight:900;color:var(--text-primary);">94.7%</div>
-          <div style="color:var(--text-muted);font-size:0.7rem;">State of Health</div>
+        <div style="position:absolute;top:10%;left:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:16px 20px;font-size:0.85rem;backdrop-filter:blur(12px);min-width:160px;box-shadow:var(--shadow-card);">
+          <div style="color:var(--health-good);font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><div class="data-node" style="position:relative;animation:none;width:6px;height:6px;background:var(--health-good);box-shadow:0 0 8px var(--health-good);"></div> SOH Status</div>
+          <div style="font-size:1.4rem;font-weight:900;color:var(--text-primary);">94.7%</div>
+          <div style="color:var(--text-muted);font-size:0.75rem;">State of Health</div>
         </div>
-        <div style="position:absolute;bottom:15%;right:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:12px 16px;font-size:0.75rem;backdrop-filter:blur(12px);min-width:140px;">
-          <div style="color:var(--accent-blue);font-weight:700;margin-bottom:2px;">RUL Forecast</div>
-          <div style="font-size:1.2rem;font-weight:900;color:var(--text-primary);">847 cycles</div>
-          <div style="color:var(--text-muted);font-size:0.7rem;">Remaining Useful Life</div>
+        <div style="position:absolute;bottom:15%;right:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:16px 20px;font-size:0.85rem;backdrop-filter:blur(12px);min-width:160px;box-shadow:var(--shadow-card);">
+          <div style="color:var(--accent-blue);font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px;"><div class="data-node" style="position:relative;animation:none;width:6px;height:6px;"></div> RUL Forecast</div>
+          <div style="font-size:1.4rem;font-weight:900;color:var(--text-primary);">847 cycles</div>
+          <div style="color:var(--text-muted);font-size:0.75rem;">Remaining Useful Life</div>
         </div>
-        <div style="position:absolute;top:55%;left:-10%;background:var(--bg-glass);border:1px solid rgba(249,115,22,0.3);border-radius:12px;padding:10px 14px;font-size:0.75rem;backdrop-filter:blur(12px);">
-          <div style="color:var(--accent-orange);font-weight:700;">⚠ Thermal Alert</div>
-          <div style="color:var(--text-muted);font-size:0.7rem;">Cell #7 monitoring</div>
+        <div style="position:absolute;top:55%;left:-10%;background:var(--bg-glass);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:14px 18px;font-size:0.85rem;backdrop-filter:blur(12px);box-shadow:var(--shadow-card);">
+          <div style="color:var(--health-crit);font-weight:700;display:flex;align-items:center;gap:6px;"><div class="data-node" style="position:relative;animation:node-blink 2s infinite;width:6px;height:6px;background:var(--health-crit);box-shadow:0 0 8px var(--health-crit);"></div> Thermal Alert</div>
+          <div style="color:var(--text-muted);font-size:0.75rem;margin-top:4px;">Cell #7 monitoring</div>
         </div>
       </div>
     </div>
@@ -170,7 +173,7 @@
 <section class="about-section section-pad" id="about">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">Research Team</div>
+      <div class="section-label">RESEARCH TEAM</div>
       <h2 class="section-title">About the <span>Researchers</span></h2>
       <p class="section-desc">A cross-disciplinary team bridging materials science, electrochemistry, AI, and EV engineering to advance battery health intelligence.</p>
     </div>
@@ -223,7 +226,7 @@
 <section class="vision-section section-pad" id="research">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">Our Purpose</div>
+      <div class="section-label">OUR PURPOSE</div>
       <h2 class="section-title">Research <span>Vision</span></h2>
     </div>
     <div class="vision-desc-block reveal">
@@ -253,7 +256,7 @@
 <section class="rnd-section section-pad" id="rnd">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Core Research</div>
+      <div class="section-label">CORE RESEARCH</div>
       <h2 class="section-title">Research & Development <span>Areas</span></h2>
       <p class="section-desc">Five interconnected research pillars spanning electrochemistry, data science, AI, and systems engineering for advanced EV battery intelligence.</p>
     </div>
@@ -312,7 +315,7 @@
 <section class="pipeline-section section-pad" id="diagnostics">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Architecture</div>
+      <div class="section-label">ARCHITECTURE</div>
       <h2 class="section-title">Battery Diagnostics <span>Intelligence Pipeline</span></h2>
       <p class="section-desc">A structured end-to-end pipeline from raw battery signals to actionable diagnostics and predictive intelligence.</p>
     </div>
@@ -367,7 +370,7 @@
 <section class="degradation-section section-pad" id="degradation">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">Deep Science</div>
+      <div class="section-label">DEEP SCIENCE</div>
       <h2 class="section-title">Understanding Battery <span>Degradation</span></h2>
       <p class="section-desc">A rigorous scientific examination of the mechanisms that drive lithium-ion battery aging — from the atomic scale to full-pack behaviour.</p>
     </div>
@@ -440,25 +443,25 @@
 <section class="health-section section-pad" id="healthmonitoring">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Monitoring Framework</div>
+      <div class="section-label">MONITORING FRAMEWORK</div>
       <h2 class="section-title">Battery Health <span>Monitoring Concepts</span></h2>
       <p class="section-desc">Key state estimation and diagnostic indicators that define the health monitoring framework for intelligent battery systems.</p>
     </div>
     <div class="health-grid">
       <div class="health-tile reveal">
-        <div class="health-tile-accent"></div>
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-blue),var(--accent-cyan));"></div>
         <div class="health-tile-abbr">SOC</div>
         <div class="health-tile-title">State of Charge</div>
         <p class="health-tile-desc">Real-time estimation of remaining usable energy relative to full capacity. Foundation for accurate range prediction in EVs.</p>
       </div>
       <div class="health-tile reveal">
-        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-teal),var(--accent-green));"></div>
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--health-good),var(--accent-cyan));"></div>
         <div class="health-tile-abbr">SOH</div>
         <div class="health-tile-title">State of Health</div>
         <p class="health-tile-desc">Ratio of present maximum capacity to rated capacity. The primary degradation health indicator for battery lifecycle management.</p>
       </div>
       <div class="health-tile reveal">
-        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-orange),#fbbf24);"></div>
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--health-fair),var(--health-warn));"></div>
         <div class="health-tile-abbr">RUL</div>
         <div class="health-tile-title">Remaining Useful Life</div>
         <p class="health-tile-desc">Predicted number of remaining cycles until the battery reaches end-of-life threshold. Critical for predictive maintenance scheduling.</p>
@@ -482,7 +485,7 @@
         <p class="health-tile-desc">Monitoring ohmic and charge-transfer resistance growth as a functional degradation signature for battery health scoring.</p>
       </div>
       <div class="health-tile reveal">
-        <div class="health-tile-accent" style="background:linear-gradient(90deg,#ef4444,var(--accent-orange));"></div>
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--health-crit),var(--health-warn));"></div>
         <div class="health-tile-abbr">T-Risk</div>
         <div class="health-tile-title">Temperature-Based Risk Monitoring</div>
         <p class="health-tile-desc">Continuous temperature profiling to detect abnormal heat generation, hot spots, and early thermal runaway precursor signatures.</p>
@@ -501,7 +504,7 @@
 <section class="aiml-section section-pad" id="aiml">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">Artificial Intelligence</div>
+      <div class="section-label">ARTIFICIAL INTELLIGENCE</div>
       <h2 class="section-title">AI-Driven Battery <span>Intelligence</span></h2>
       <p class="section-desc">Applying machine learning, diagnostic analytics, and future digital twin approaches to understand battery degradation and predict health and safety risks.</p>
     </div>
@@ -561,7 +564,7 @@
 <section class="tech-section section-pad" id="technology">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Product Vision</div>
+      <div class="section-label">PRODUCT VISION</div>
       <h2 class="section-title">Technology <span>Platforms</span></h2>
       <p class="section-desc">Research-to-product platform concepts designed to bring battery intelligence to EV manufacturers, fleet operators, and battery pack makers.</p>
     </div>
@@ -606,7 +609,7 @@
 <section class="industry-section section-pad" id="industry">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Real-World Impact</div>
+      <div class="section-label">REAL-WORLD IMPACT</div>
       <h2 class="section-title">Industry <span>Applications</span></h2>
       <p class="section-desc">Research translated into practical value across the full EV ecosystem — from passenger vehicles to industrial energy storage.</p>
     </div>
@@ -655,7 +658,7 @@
 <section class="why-section section-pad" id="why">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-label">Industry Value</div>
+      <div class="section-label">INDUSTRY VALUE</div>
       <h2 class="section-title">Why This Matters to <span>EV Industry</span></h2>
     </div>
     <div class="why-inner">
@@ -715,7 +718,7 @@
 <section class="pubs-section section-pad" id="publications">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Research Outputs</div>
+      <div class="section-label">RESEARCH OUTPUTS</div>
       <h2 class="section-title">Publications & <span>Research Outputs</span></h2>
       <p class="section-desc">Ongoing research documentation, knowledge contributions, and future innovation directions in battery health and diagnostics.</p>
     </div>
@@ -764,7 +767,7 @@
 <section class="skills-section section-pad" id="resources">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Expertise</div>
+      <div class="section-label">EXPERTISE</div>
       <h2 class="section-title">Skills & <span>Capabilities</span></h2>
       <p class="section-desc">A deep cross-disciplinary skill set spanning electrochemistry, artificial intelligence, and EV systems engineering.</p>
     </div>
@@ -885,7 +888,7 @@
 <section class="collab-section section-pad" id="collaboration">
   <div class="container">
     <div class="collab-inner reveal">
-      <div class="section-label" style="margin:0 auto 16px;">Open Collaboration</div>
+      <div class="section-label" style="margin:0 auto 16px;">OPEN COLLABORATION</div>
       <h2 class="section-title">Research <span>Collaboration</span></h2>
       <p class="section-desc" style="margin:0 auto;">Open to collaboration with EV OEMs, battery manufacturers, research laboratories, universities, and AI-driven mobility startups working on battery health, safety, and predictive diagnostics.</p>
       <div class="collab-orgs">
@@ -907,7 +910,7 @@
 <section class="contact-section section-pad" id="contact">
   <div class="container">
     <div class="section-header center reveal">
-      <div class="section-label">Get In Touch</div>
+      <div class="section-label">GET IN TOUCH</div>
       <h2 class="section-title">Contact <span>Us</span></h2>
       <p class="section-desc">Reach out for research collaboration, industry partnerships, or to learn more about our battery health and diagnostics work.</p>
     </div>
