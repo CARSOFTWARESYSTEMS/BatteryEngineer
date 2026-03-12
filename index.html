@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Battery Health & Diagnostics | Advanced Lithium-ion Battery Research</title>
+  <meta name="description" content="Advanced Lithium-ion Battery Degradation Research and Intelligent Battery Health Monitoring Systems. Research by Shilajit Das and Sudarshana Karkala." />
+  <meta name="keywords" content="EV battery health, battery diagnostics, lithium-ion degradation, SOC SOH RUL, battery AI, predictive maintenance, NITK battery research" />
+  <meta property="og:title" content="EV Battery Health & Diagnostics" />
+  <meta property="og:description" content="Towards safer, longer-lasting, and intelligent EV battery systems." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔋</text></svg>" />
+</head>
+<body>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <div class="nav-logo-icon">⚡</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">EV Battery Health</span>
+        <span class="nav-logo-sub">& Diagnostics Research</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#research" class="nav-link">Research</a></li>
+      <li><a href="#diagnostics" class="nav-link">Battery Diagnostics</a></li>
+      <li><a href="#aiml" class="nav-link">AI / ML</a></li>
+      <li><a href="#technology" class="nav-link">Technology</a></li>
+      <li><a href="#publications" class="nav-link">Publications</a></li>
+      <li><a href="#resources" class="nav-link">Resources</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙</button>
+      <a href="#contact" class="btn btn-primary" style="padding:9px 20px;font-size:0.82rem;">Collaborate</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">🏠 Home</a>
+  <a href="#research" class="mobile-link">🔬 Research</a>
+  <a href="#diagnostics" class="mobile-link">🩺 Battery Diagnostics</a>
+  <a href="#aiml" class="mobile-link">🤖 AI / ML</a>
+  <a href="#technology" class="mobile-link">💻 Technology Platforms</a>
+  <a href="#publications" class="mobile-link">📄 Publications</a>
+  <a href="#resources" class="mobile-link">📚 Resources</a>
+  <a href="#contact" class="mobile-link">📬 Contact</a>
+  <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-subtle);">
+    <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Collaborate With Us</a>
+  </div>
+</div>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-label animate-fade-up">
+          <span class="hero-label-dot"></span>
+          Next-Generation Battery Intelligence Platform
+        </div>
+        <h1 class="hero-title animate-fade-up delay-1">
+          EV Battery<br/>
+          <span class="gradient-text">Health & Diagnostics</span>
+        </h1>
+        <p class="hero-subtitle animate-fade-up delay-2">
+          Advanced Lithium-ion Battery Degradation Research and<br/>Intelligent Battery Health Monitoring Systems
+        </p>
+        <p class="hero-desc animate-fade-up delay-2">
+          Developing intelligent diagnostics, battery health monitoring systems, and predictive AI models to understand lithium-ion battery degradation and improve safety, reliability, and performance in electric vehicles.
+        </p>
+        <div class="hero-chips animate-fade-up delay-3">
+          <span class="hero-chip">🔬 Lithium-ion Battery Degradation</span>
+          <span class="hero-chip">📊 SOC | SOH | RUL Monitoring</span>
+          <span class="hero-chip">🤖 AI-Driven Battery Diagnostics</span>
+        </div>
+        <div class="hero-btns animate-fade-up delay-4">
+          <a href="#research" class="btn btn-primary">Explore Research →</a>
+          <a href="#technology" class="btn btn-outline">View Technology</a>
+        </div>
+        <p style="margin-top:24px;font-size:0.8rem;color:var(--text-muted);font-style:italic;">
+          Towards safer, longer-lasting, and intelligent EV battery systems.
+        </p>
+      </div>
+      <div class="hero-visual animate-fade-up delay-2">
+        <div class="battery-viz">
+          <div class="battery-ring ring-1"></div>
+          <div class="battery-ring ring-2"></div>
+          <div class="battery-ring ring-3"></div>
+          <div class="battery-core">
+            <svg class="battery-icon-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="20" width="56" height="40" rx="6" stroke="#0ea5e9" stroke-width="2.5"/>
+              <rect x="64" y="30" width="8" height="20" rx="3" fill="#0ea5e9" opacity="0.6"/>
+              <rect x="14" y="26" width="16" height="28" rx="3" fill="#0ea5e9" opacity="0.8"/>
+              <rect x="34" y="26" width="10" height="28" rx="3" fill="#14b8a6" opacity="0.7"/>
+              <rect x="48" y="26" width="10" height="28" rx="3" fill="#22d3a5" opacity="0.6"/>
+              <path d="M36 14 L28 36 H38 L30 66" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="battery-pulse"></div>
+          <div class="battery-pulse"></div>
+          <div class="battery-pulse"></div>
+          <div class="data-nodes">
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+          </div>
+        </div>
+        <!-- Floating data cards -->
+        <div style="position:absolute;top:10%;left:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:12px 16px;font-size:0.75rem;backdrop-filter:blur(12px);min-width:140px;">
+          <div style="color:var(--accent-green);font-weight:700;margin-bottom:2px;">SOH Status</div>
+          <div style="font-size:1.2rem;font-weight:900;color:var(--text-primary);">94.7%</div>
+          <div style="color:var(--text-muted);font-size:0.7rem;">State of Health</div>
+        </div>
+        <div style="position:absolute;bottom:15%;right:0;background:var(--bg-glass);border:1px solid var(--border-card);border-radius:12px;padding:12px 16px;font-size:0.75rem;backdrop-filter:blur(12px);min-width:140px;">
+          <div style="color:var(--accent-blue);font-weight:700;margin-bottom:2px;">RUL Forecast</div>
+          <div style="font-size:1.2rem;font-weight:900;color:var(--text-primary);">847 cycles</div>
+          <div style="color:var(--text-muted);font-size:0.7rem;">Remaining Useful Life</div>
+        </div>
+        <div style="position:absolute;top:55%;left:-10%;background:var(--bg-glass);border:1px solid rgba(249,115,22,0.3);border-radius:12px;padding:10px 14px;font-size:0.75rem;backdrop-filter:blur(12px);">
+          <div style="color:var(--accent-orange);font-weight:700;">⚠ Thermal Alert</div>
+          <div style="color:var(--text-muted);font-size:0.7rem;">Cell #7 monitoring</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== METRICS STRIP ====== -->
+<section class="metrics-strip">
+  <div class="container">
+    <div class="metrics-grid reveal">
+      <div class="metric-card">
+        <div class="metric-icon">🔬</div>
+        <div class="metric-value">5+</div>
+        <div class="metric-label">Research Domains</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">⚗️</div>
+        <div class="metric-value">10+</div>
+        <div class="metric-label">Battery Aging Concepts</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">📊</div>
+        <div class="metric-value">SOC/SOH/RUL</div>
+        <div class="metric-label">Health Monitoring Focus</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">🤖</div>
+        <div class="metric-value">AI-First</div>
+        <div class="metric-label">Predictive Diagnostics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ABOUT THE RESEARCHERS ====== -->
+<section class="about-section section-pad" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Research Team</div>
+      <h2 class="section-title">About the <span>Researchers</span></h2>
+      <p class="section-desc">A cross-disciplinary team bridging materials science, electrochemistry, AI, and EV engineering to advance battery health intelligence.</p>
+    </div>
+    <div class="researchers-grid">
+      <!-- Researcher 1 -->
+      <div class="researcher-card reveal">
+        <div class="researcher-header">
+          <img src="assets/images/shilajit_das.jpeg" alt="Shilajit Das" class="researcher-photo" onerror="this.style.display='none'"/>
+          <div class="researcher-info">
+            <div class="researcher-name">Shilajit Das</div>
+            <div class="researcher-role">Research Scholar</div>
+            <div class="researcher-inst">Metallurgical and Materials Engineering<br/>National Institute of Technology Karnataka, Surathkal</div>
+            <span class="researcher-badge">Lead Researcher</span>
+          </div>
+        </div>
+        <div class="researcher-focus">
+          <strong>Specialisation:</strong> Lithium-ion Battery Degradation Research — electrochemical degradation mechanisms, SEI layer formation, cathode aging, and capacity fade analysis.
+        </div>
+        <div class="researcher-contacts">
+          <a href="tel:+918240307388" class="contact-link"><span>📞</span> +91 82403 07388</a>
+          <a href="mailto:shilajit.me29@gmail.com" class="contact-link"><span>✉️</span> shilajit.me29@gmail.com</a>
+          <a href="mailto:shilajitdas.207mt006@nitk.edu.in" class="contact-link"><span>🎓</span> shilajitdas.207mt006@nitk.edu.in</a>
+        </div>
+      </div>
+      <!-- Researcher 2 -->
+      <div class="researcher-card reveal">
+        <div class="researcher-header">
+          <img src="assets/images/sudarshana_karkala.jpg" alt="Sudarshana Karkala" class="researcher-photo" onerror="this.style.display='none'"/>
+          <div class="researcher-info">
+            <div class="researcher-name">Sudarshana Karkala</div>
+            <div class="researcher-role">EV.ENGINEER™</div>
+            <div class="researcher-inst">AI & Software-Driven EV Predictive Maintenance<br/>Industry Collaborator & Co-Researcher</div>
+            <span class="researcher-badge">Co-Researcher</span>
+          </div>
+        </div>
+        <div class="researcher-focus">
+          <strong>Focus Areas:</strong> EV Battery Fire Prevention Systems, AI-driven predictive maintenance, software-defined battery diagnostics, and intelligent EV safety platforms.
+        </div>
+        <div class="researcher-contacts">
+          <a href="tel:+919845561518" class="contact-link"><span>📞</span> +91 98455 61518</a>
+          <a href="mailto:sudarshana.karkala@gmail.com" class="contact-link"><span>✉️</span> sudarshana.karkala@gmail.com</a>
+          <a href="https://www.linkedin.com/in/sudarshanakarkala/" target="_blank" class="contact-link"><span>🔗</span> linkedin.com/in/sudarshanakarkala</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== RESEARCH VISION ====== -->
+<section class="vision-section section-pad" id="research">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Our Purpose</div>
+      <h2 class="section-title">Research <span>Vision</span></h2>
+    </div>
+    <div class="vision-desc-block reveal">
+      <p>To advance the scientific understanding of lithium-ion battery degradation and build intelligent battery health monitoring systems that enable safer, longer-lasting, and more reliable EV energy systems — contributing to a cleaner, smarter, and more sustainable future of mobility.</p>
+    </div>
+    <div class="vision-cards">
+      <div class="vision-card reveal">
+        <div class="vision-icon">⚗️</div>
+        <div class="vision-title">Degradation Science</div>
+        <p class="vision-text">Deep electrochemical investigation of degradation mechanisms at the molecular, particle, and cell levels — SEI growth, lithium plating, cathode structural changes.</p>
+      </div>
+      <div class="vision-card reveal">
+        <div class="vision-icon">🧠</div>
+        <div class="vision-title">Battery Intelligence</div>
+        <p class="vision-text">Building intelligent monitoring frameworks that accurately estimate SOC, SOH, and RUL in real time using data-driven and physical models.</p>
+      </div>
+      <div class="vision-card reveal">
+        <div class="vision-icon">🛡️</div>
+        <div class="vision-title">AI-Powered Safety</div>
+        <p class="vision-text">Detecting early thermal runaway precursors and safety-critical events using anomaly detection, risk scoring, and predictive AI systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== R&D AREAS ====== -->
+<section class="rnd-section section-pad" id="rnd">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Core Research</div>
+      <h2 class="section-title">Research & Development <span>Areas</span></h2>
+      <p class="section-desc">Five interconnected research pillars spanning electrochemistry, data science, AI, and systems engineering for advanced EV battery intelligence.</p>
+    </div>
+    <div class="rnd-grid">
+      <div class="card reveal">
+        <span class="card-icon">⚡</span>
+        <div class="card-title">Lithium-ion Battery Degradation</div>
+        <p class="card-desc">Electrochemical degradation mechanisms, SEI layer formation, lithium plating, cathode aging, electrolyte decomposition, and capacity fade analysis across charge cycles and calendar aging.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;">
+          <span class="deg-tag">SEI Growth</span><span class="deg-tag">Capacity Fade</span><span class="deg-tag">Li Plating</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">📊</span>
+        <div class="card-title">Battery Health Monitoring</div>
+        <p class="card-desc">State estimation including SOC, SOH, RUL, and DoD. Internal resistance tracking, battery diagnostics, real-time performance monitoring, and degradation trend analysis.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;">
+          <span class="deg-tag">SOC</span><span class="deg-tag">SOH</span><span class="deg-tag">RUL</span><span class="deg-tag">DoD</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🛡️</span>
+        <div class="card-title">Battery Safety Diagnostics</div>
+        <p class="card-desc">Thermal runaway precursor detection, anomaly identification, early warning systems, safety analytics, and fire prevention concepts for EV battery packs.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;">
+          <span class="deg-tag">Thermal Runaway</span><span class="deg-tag">Anomaly Detection</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🤖</span>
+        <div class="card-title">AI-Driven Battery Analytics</div>
+        <p class="card-desc">Battery degradation prediction using machine learning models, health scoring algorithms, fault detection pipelines, and predictive maintenance systems for EV fleets.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;">
+          <span class="deg-tag">ML Models</span><span class="deg-tag">Health Scoring</span><span class="deg-tag">Fault Detection</span>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🔗</span>
+        <div class="card-title">Intelligent Energy Management</div>
+        <p class="card-desc">Smart control and monitoring systems for EV battery packs, connected diagnostics platforms, and energy intelligence systems for optimized battery performance and longevity.</p>
+        <div style="margin-top:14px;display:flex;gap:6px;flex-wrap:wrap;">
+          <span class="deg-tag">BMS</span><span class="deg-tag">Connected Diagnostics</span>
+        </div>
+      </div>
+      <div class="card reveal" style="background:linear-gradient(135deg,rgba(14,165,233,0.08),rgba(20,184,166,0.05));border-color:rgba(14,165,233,0.3);">
+        <span class="card-icon">🌐</span>
+        <div class="card-title">Open Research Collaboration</div>
+        <p class="card-desc">Engaging with EV OEMs, battery manufacturers, academic institutions, and AI startups to accelerate battery health science and translate research into real-world applications.</p>
+        <div style="margin-top:18px;"><a href="#contact" class="btn btn-primary" style="padding:9px 20px;font-size:0.82rem;">Join Research</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DIAGNOSTICS PIPELINE ====== -->
+<section class="pipeline-section section-pad" id="diagnostics">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Architecture</div>
+      <h2 class="section-title">Battery Diagnostics <span>Intelligence Pipeline</span></h2>
+      <p class="section-desc">A structured end-to-end pipeline from raw battery signals to actionable diagnostics and predictive intelligence.</p>
+    </div>
+    <div class="pipeline-flow reveal">
+      <div class="pipeline-step">
+        <div class="pipeline-num">1</div>
+        <div class="pipeline-card">
+          <div class="pipeline-card-title">🔌 Sensors</div>
+          <div class="pipeline-card-desc">Voltage, current, temperature, impedance, and battery pack telemetry collection.</div>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">2</div>
+        <div class="pipeline-card">
+          <div class="pipeline-card-title">📦 Data Acquisition</div>
+          <div class="pipeline-card-desc">BMS logging, structured battery data collection and time-series storage.</div>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">3</div>
+        <div class="pipeline-card">
+          <div class="pipeline-card-title">⚙️ Pre-Processing</div>
+          <div class="pipeline-card-desc">Noise filtering, signal conditioning, feature extraction, and normalization.</div>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">4</div>
+        <div class="pipeline-card">
+          <div class="pipeline-card-title">🤖 AI Analysis</div>
+          <div class="pipeline-card-desc">ML models for degradation trend detection, anomaly identification, and behaviour analysis.</div>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">5</div>
+        <div class="pipeline-card">
+          <div class="pipeline-card-title">📊 Health Scoring</div>
+          <div class="pipeline-card-desc">SOC, SOH, and RUL estimation with diagnostic indicators and risk scores.</div>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">6</div>
+        <div class="pipeline-card" style="border-color:rgba(14,165,233,0.4);background:linear-gradient(135deg,rgba(14,165,233,0.08),rgba(20,184,166,0.05));">
+          <div class="pipeline-card-title">🛡️ Predictive Maintenance</div>
+          <div class="pipeline-card-desc">Battery safety alerts, degradation forecasting, and maintenance intelligence.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== UNDERSTANDING BATTERY DEGRADATION ====== -->
+<section class="degradation-section section-pad" id="degradation">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Deep Science</div>
+      <h2 class="section-title">Understanding Battery <span>Degradation</span></h2>
+      <p class="section-desc">A rigorous scientific examination of the mechanisms that drive lithium-ion battery aging — from the atomic scale to full-pack behaviour.</p>
+    </div>
+    <div class="degradation-grid">
+      <div class="deg-card reveal">
+        <div class="deg-icon">🧪</div>
+        <div class="deg-title">SEI Layer Growth</div>
+        <div class="deg-desc">Solid Electrolyte Interphase formation consumes lithium inventory and increases internal resistance over cycling.</div>
+        <span class="deg-tag">Electrochemical</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">❄️</div>
+        <div class="deg-title">Lithium Plating</div>
+        <div class="deg-desc">Metallic lithium deposits on anode surface during fast charging or low-temperature operation, causing safety risks.</div>
+        <span class="deg-tag">Safety Critical</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">🔩</div>
+        <div class="deg-title">Cathode Structural Degradation</div>
+        <div class="deg-desc">Phase transitions, particle cracking, and structural disorder in cathode materials reduce energy capacity.</div>
+        <span class="deg-tag">Material Science</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">⚗️</div>
+        <div class="deg-title">Electrolyte Decomposition</div>
+        <div class="deg-desc">Electrolyte oxidation and reduction reactions produce gases and resistive byproducts inside the cell.</div>
+        <span class="deg-tag">Chemistry</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">🗜️</div>
+        <div class="deg-title">Mechanical Stress in Electrodes</div>
+        <div class="deg-desc">Volume changes during intercalation/deintercalation induce mechanical fatigue, cracking, and loss of contact.</div>
+        <span class="deg-tag">Mechanical</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">📉</div>
+        <div class="deg-title">Capacity Fade</div>
+        <div class="deg-desc">Cumulative loss of cyclable lithium and active material resulting in measurable reduction of cell energy throughput.</div>
+        <span class="deg-tag">Performance</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">📈</div>
+        <div class="deg-title">Internal Resistance Growth</div>
+        <div class="deg-desc">Rising ohmic and charge-transfer resistance due to interface degradation, limiting power delivery capability.</div>
+        <span class="deg-tag">Impedance</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">📅</div>
+        <div class="deg-title">Calendar Aging</div>
+        <div class="deg-desc">Time-dependent degradation occurring even when the battery is at rest, influenced by SOC level and temperature.</div>
+        <span class="deg-tag">Time-Based</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">🔄</div>
+        <div class="deg-title">Cycle Aging</div>
+        <div class="deg-desc">Charge–discharge cycling progressively degrades cell components through cumulative electrochemical stress.</div>
+        <span class="deg-tag">Usage-Based</span>
+      </div>
+      <div class="deg-card reveal">
+        <div class="deg-icon">🌡️</div>
+        <div class="deg-title">Thermal Stress Effects</div>
+        <div class="deg-desc">High temperature operation and gradients accelerate chemical reactions, SEI growth, and electrolyte decomposition.</div>
+        <span class="deg-tag">Thermal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== BATTERY HEALTH MONITORING FRAMEWORK ====== -->
+<section class="health-section section-pad" id="healthmonitoring">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Monitoring Framework</div>
+      <h2 class="section-title">Battery Health <span>Monitoring Concepts</span></h2>
+      <p class="section-desc">Key state estimation and diagnostic indicators that define the health monitoring framework for intelligent battery systems.</p>
+    </div>
+    <div class="health-grid">
+      <div class="health-tile reveal">
+        <div class="health-tile-accent"></div>
+        <div class="health-tile-abbr">SOC</div>
+        <div class="health-tile-title">State of Charge</div>
+        <p class="health-tile-desc">Real-time estimation of remaining usable energy relative to full capacity. Foundation for accurate range prediction in EVs.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-teal),var(--accent-green));"></div>
+        <div class="health-tile-abbr">SOH</div>
+        <div class="health-tile-title">State of Health</div>
+        <p class="health-tile-desc">Ratio of present maximum capacity to rated capacity. The primary degradation health indicator for battery lifecycle management.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-orange),#fbbf24);"></div>
+        <div class="health-tile-abbr">RUL</div>
+        <div class="health-tile-title">Remaining Useful Life</div>
+        <p class="health-tile-desc">Predicted number of remaining cycles until the battery reaches end-of-life threshold. Critical for predictive maintenance scheduling.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-purple),#a78bfa);"></div>
+        <div class="health-tile-abbr">DoD</div>
+        <div class="health-tile-title">Depth of Discharge</div>
+        <p class="health-tile-desc">Percentage of battery capacity used in a cycle. Higher DoD accelerates electrode stress and overall cell degradation rate.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent"></div>
+        <div class="health-tile-abbr">CE</div>
+        <div class="health-tile-title">Coulombic Efficiency</div>
+        <p class="health-tile-desc">Ratio of charge extracted to charge input per cycle. Deviations indicate parasitic reactions and active lithium loss events.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-teal),var(--accent-blue));"></div>
+        <div class="health-tile-abbr">Ri</div>
+        <div class="health-tile-title">Internal Resistance Tracking</div>
+        <p class="health-tile-desc">Monitoring ohmic and charge-transfer resistance growth as a functional degradation signature for battery health scoring.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,#ef4444,var(--accent-orange));"></div>
+        <div class="health-tile-abbr">T-Risk</div>
+        <div class="health-tile-title">Temperature-Based Risk Monitoring</div>
+        <p class="health-tile-desc">Continuous temperature profiling to detect abnormal heat generation, hot spots, and early thermal runaway precursor signatures.</p>
+      </div>
+      <div class="health-tile reveal">
+        <div class="health-tile-accent" style="background:linear-gradient(90deg,var(--accent-green),var(--accent-teal));"></div>
+        <div class="health-tile-abbr">BAD</div>
+        <div class="health-tile-title">Battery Aging Diagnostics</div>
+        <p class="health-tile-desc">Integrated diagnostic framework combining multiple state estimators for a comprehensive battery health picture over its lifecycle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== AI / ML ====== -->
+<section class="aiml-section section-pad" id="aiml">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Artificial Intelligence</div>
+      <h2 class="section-title">AI-Driven Battery <span>Intelligence</span></h2>
+      <p class="section-desc">Applying machine learning, diagnostic analytics, and future digital twin approaches to understand battery degradation and predict health and safety risks.</p>
+    </div>
+    <div class="aiml-grid">
+      <div class="card reveal">
+        <span class="card-icon">📈</span>
+        <div class="card-title">Battery Degradation Prediction</div>
+        <p class="card-desc">Data-driven models trained on electrochemical feature vectors to forecast SOH trajectory and capacity fade progression.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🔧</span>
+        <div class="card-title">Predictive Maintenance Models</div>
+        <p class="card-desc">ML pipelines that estimate RUL and optimal maintenance windows to reduce unplanned failures in EV battery systems.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🔍</span>
+        <div class="card-title">Battery Failure Pattern Recognition</div>
+        <p class="card-desc">Identifying recurring degradation signatures and failure modes from historical cycling data to anticipate future cell behavior.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🪞</span>
+        <div class="card-title">Battery Digital Twin Concepts</div>
+        <p class="card-desc">Virtual representations of physical battery cells that evolve with real-world data for simulation, testing, and health tracking.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🚨</span>
+        <div class="card-title">Anomaly Detection for Battery Safety</div>
+        <p class="card-desc">Unsupervised and supervised anomaly detection to identify out-of-norm behavior that may indicate safety-critical conditions.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🎯</span>
+        <div class="card-title">Battery Risk Scoring Systems</div>
+        <p class="card-desc">Composite risk scores derived from multi-parameter health indicators to provide a single actionable battery safety index.</p>
+      </div>
+    </div>
+
+    <!-- Featured Project -->
+    <div class="featured-project reveal">
+      <div class="featured-content">
+        <span class="featured-label">⭐ Featured Research Project</span>
+        <h3 class="featured-title">AI-Powered EV Battery<br/><span class="text-blue">Fire Prevention System</span></h3>
+        <p class="featured-desc">An intelligent diagnostic platform that uses real-time battery telemetry, machine learning anomaly detection, and thermal risk modeling to identify early indicators of thermal runaway — preventing battery fires before they occur. Designed for integration with next-generation BMS architectures in EV passenger vehicles, two-wheelers, and commercial fleets.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
+          <span class="deg-tag">Thermal Runaway Prevention</span>
+          <span class="deg-tag">Real-time Monitoring</span>
+          <span class="deg-tag">ML Anomaly Detection</span>
+          <span class="deg-tag">BMS Integration</span>
+        </div>
+        <a href="#contact" class="btn btn-orange">Learn More →</a>
+      </div>
+      <div class="featured-visual">🔥</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TECHNOLOGY PLATFORMS ====== -->
+<section class="tech-section section-pad" id="technology">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Product Vision</div>
+      <h2 class="section-title">Technology <span>Platforms</span></h2>
+      <p class="section-desc">Research-to-product platform concepts designed to bring battery intelligence to EV manufacturers, fleet operators, and battery pack makers.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card reveal">
+        <div class="tech-card-icon-wrap">📡</div>
+        <div class="tech-card-body">
+          <div class="tech-card-title">EV Battery Health Monitoring Platform</div>
+          <p class="tech-card-desc">Real-time tracking of battery pack condition, health indicators, and diagnostic insights across the full vehicle fleet. Continuous SOC, SOH, and internal resistance monitoring with dashboard visualization.</p>
+          <span class="tech-tag">Real-time</span><span class="tech-tag">Fleet Scale</span><span class="tech-tag">Dashboard</span>
+        </div>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-card-icon-wrap">🔮</div>
+        <div class="tech-card-body">
+          <div class="tech-card-title">Battery Predictive Maintenance Platform</div>
+          <p class="tech-card-desc">Using cycling data and AI models to forecast degradation trends, estimate RUL, and generate maintenance intelligence — reducing unplanned downtime and extending battery pack usable life.</p>
+          <span class="tech-tag">RUL Prediction</span><span class="tech-tag">AI-Driven</span><span class="tech-tag">Maintenance</span>
+        </div>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-card-icon-wrap">🛡️</div>
+        <div class="tech-card-body">
+          <div class="tech-card-title">Battery Safety Analytics Platform</div>
+          <p class="tech-card-desc">Identifying early risk indicators related to thermal instability, lithium plating risk, and safety-critical events. Designed for OEM integration and fleet safety management systems.</p>
+          <span class="tech-tag">Safety</span><span class="tech-tag">Thermal Risk</span><span class="tech-tag">OEM Ready</span>
+        </div>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-card-icon-wrap">⚡</div>
+        <div class="tech-card-body">
+          <div class="tech-card-title">Intelligent Energy Diagnostics Platform</div>
+          <p class="tech-card-desc">Integration of software-driven diagnostics, energy intelligence, and battery management for advanced EV systems. Enables smart, connected, data-informed battery operation at scale.</p>
+          <span class="tech-tag">Software-Defined</span><span class="tech-tag">BMS</span><span class="tech-tag">Energy Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== INDUSTRY APPLICATIONS ====== -->
+<section class="industry-section section-pad" id="industry">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Real-World Impact</div>
+      <h2 class="section-title">Industry <span>Applications</span></h2>
+      <p class="section-desc">Research translated into practical value across the full EV ecosystem — from passenger vehicles to industrial energy storage.</p>
+    </div>
+    <div class="industry-grid">
+      <div class="industry-card reveal">
+        <div class="industry-icon">🚗</div>
+        <div class="industry-title">Electric Passenger Vehicles</div>
+        <p class="industry-desc">Health monitoring and predictive diagnostics for sedan, SUV, and hatchback EV battery packs. Improved range prediction through accurate SOC/SOH estimation.</p>
+        <div class="industry-value">→ Range accuracy & battery longevity</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🛵</div>
+        <div class="industry-title">Electric Two-Wheelers</div>
+        <p class="industry-desc">Lightweight battery diagnostics tailored for high-cycle-frequency two-wheeler use patterns. Relevant to Indian OEMs like Ola, Ather, TVS, and Bajaj.</p>
+        <div class="industry-value">→ Compact, high-frequency diagnostics</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🚌</div>
+        <div class="industry-title">Commercial EV Fleets</div>
+        <p class="industry-desc">Fleet-level battery health intelligence, predictive maintenance scheduling, and degradation analytics for buses, trucks, and delivery vehicles.</p>
+        <div class="industry-value">→ Fleet uptime & cost reduction</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🏭</div>
+        <div class="industry-title">Battery Pack Manufacturers</div>
+        <p class="industry-desc">End-of-line diagnostics, aging characterization, and quality intelligence tools for battery pack production and testing environments.</p>
+        <div class="industry-value">→ Quality control & yield improvement</div>
+      </div>
+      <div class="industry-card reveal">
+        <div class="industry-icon">🔋</div>
+        <div class="industry-title">Energy Storage Systems</div>
+        <p class="industry-desc">Health monitoring and lifecycle management for stationary lithium-ion energy storage used in grid, solar, and commercial applications.</p>
+        <div class="industry-value">→ Stationary storage reliability</div>
+      </div>
+      <div class="industry-card reveal" style="background:linear-gradient(135deg,rgba(14,165,233,0.08),rgba(20,184,166,0.05));border-color:rgba(14,165,233,0.3);">
+        <div class="industry-icon">🤖</div>
+        <div class="industry-title">AI-Driven EV Safety Platforms</div>
+        <p class="industry-desc">Software companies and AI startups building next-generation battery safety, telematics, and diagnostics products for the global EV market.</p>
+        <div class="industry-value">→ Safety-as-a-Service for EV</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== WHY THIS MATTERS ====== -->
+<section class="why-section section-pad" id="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Industry Value</div>
+      <h2 class="section-title">Why This Matters to <span>EV Industry</span></h2>
+    </div>
+    <div class="why-inner">
+      <div class="why-points">
+        <div class="why-point reveal">
+          <span class="why-point-icon">⚡</span>
+          <div><div class="why-point-title">Better Battery Reliability</div><p class="why-point-desc">Intelligent diagnostics reduce unexpected failures, enabling OEMs to deliver more reliable electric vehicles with stronger warranty programs and customer confidence.</p></div>
+        </div>
+        <div class="why-point reveal">
+          <span class="why-point-icon">⏳</span>
+          <div><div class="why-point-title">Longer Usable Battery Life</div><p class="why-point-desc">Understanding degradation mechanisms enables smart charging strategies and usage optimization that extend pack life beyond standard warranty cycles.</p></div>
+        </div>
+        <div class="why-point reveal">
+          <span class="why-point-icon">🛡️</span>
+          <div><div class="why-point-title">Improved Safety Monitoring</div><p class="why-point-desc">Early anomaly detection and thermal risk intelligence prevent battery fires, protecting drivers, property, and brand reputation for OEMs and fleet operators.</p></div>
+        </div>
+        <div class="why-point reveal">
+          <span class="why-point-icon">📉</span>
+          <div><div class="why-point-title">Reduced Field Failures</div><p class="why-point-desc">Predictive diagnostics identify batteries approaching failure before field incidents occur — reducing costly recalls, warranty claims, and service interventions.</p></div>
+        </div>
+        <div class="why-point reveal">
+          <span class="why-point-icon">🔮</span>
+          <div><div class="why-point-title">Stronger Battery Intelligence for Future EVs</div><p class="why-point-desc">Building the foundational AI and data systems required for autonomous battery management in next-generation EV architectures and solid-state batteries.</p></div>
+        </div>
+      </div>
+      <div class="why-visual reveal-right">
+        <div class="why-big-icon">🔋</div>
+        <div class="why-stat">94.7%</div>
+        <div class="why-stat-label">Target SOH at 1000 cycles</div>
+        <div class="why-stats-row">
+          <div class="why-stat-item">
+            <div class="why-stat" style="font-size:1.6rem;">3×</div>
+            <div class="why-stat-label" style="font-size:0.75rem;">Faster diagnosis vs manual</div>
+          </div>
+          <div class="why-stat-item">
+            <div class="why-stat" style="font-size:1.6rem;">Early</div>
+            <div class="why-stat-label" style="font-size:0.75rem;">Thermal risk detection</div>
+          </div>
+          <div class="why-stat-item">
+            <div class="why-stat" style="font-size:1.6rem;">AI</div>
+            <div class="why-stat-label" style="font-size:0.75rem;">Driven RUL forecasting</div>
+          </div>
+          <div class="why-stat-item">
+            <div class="why-stat" style="font-size:1.6rem;">↓</div>
+            <div class="why-stat-label" style="font-size:0.75rem;">Field failure rate target</div>
+          </div>
+        </div>
+        <div style="margin-top:24px;padding:16px;border:1px solid var(--border-card);border-radius:12px;background:var(--bg-secondary);">
+          <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.7;font-style:italic;">"Battery intelligence is no longer optional — it's the cornerstone of safe, reliable, and competitive electric vehicles."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PUBLICATIONS ====== -->
+<section class="pubs-section section-pad" id="publications">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Research Outputs</div>
+      <h2 class="section-title">Publications & <span>Research Outputs</span></h2>
+      <p class="section-desc">Ongoing research documentation, knowledge contributions, and future innovation directions in battery health and diagnostics.</p>
+    </div>
+    <div class="pubs-grid">
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-paper">Research Papers</span>
+        <div class="pub-icon">📄</div>
+        <div class="pub-title">Lithium-ion Battery Degradation Studies</div>
+        <p class="pub-desc">Electrochemical analysis and aging characterisation of Li-ion cells under varied cycling conditions. Work in progress — NITK Surathkal.</p>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-patent">Patents</span>
+        <div class="pub-icon">⚖️</div>
+        <div class="pub-title">Battery Diagnostics Innovation (Placeholder)</div>
+        <p class="pub-desc">Patent concepts in battery safety diagnostics and health monitoring are being explored. Details to be disclosed upon filing.</p>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-report">Technical Reports</span>
+        <div class="pub-icon">📋</div>
+        <div class="pub-title">Battery Aging & Health Monitoring Framework</div>
+        <p class="pub-desc">Technical documentation of SOC, SOH, and RUL estimation methods applied to lithium-ion battery datasets.</p>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-innovation">Innovation Ideas</span>
+        <div class="pub-icon">💡</div>
+        <div class="pub-title">AI-Driven Battery Fire Prevention</div>
+        <p class="pub-desc">Conceptual design of an intelligent EV battery fire prevention system using real-time telemetry and ML-based anomaly detection.</p>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-dataset">Datasets</span>
+        <div class="pub-icon">🗄️</div>
+        <div class="pub-title">Battery Cycling & Degradation Data</div>
+        <p class="pub-desc">Structured datasets from battery cycling experiments for degradation modelling and health monitoring algorithm training.</p>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-card-type type-roadmap">Future Roadmap</span>
+        <div class="pub-icon">🗺️</div>
+        <div class="pub-title">Battery Intelligence Research Roadmap</div>
+        <p class="pub-desc">Planned research directions including digital twin development, edge BMS intelligence, and industry collaboration projects for 2025–2027.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SKILLS ====== -->
+<section class="skills-section section-pad" id="resources">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-title">Skills & <span>Capabilities</span></h2>
+      <p class="section-desc">A deep cross-disciplinary skill set spanning electrochemistry, artificial intelligence, and EV systems engineering.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="skill-group-icon">⚗️</span>
+          <div class="skill-group-title">Battery Research Skills</div>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Electrochemical Analysis</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Battery Aging Studies</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Degradation Modelling</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Battery Diagnostics</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Battery Safety Concepts</span><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="skill-group-icon">🤖</span>
+          <div class="skill-group-title">AI & Software Skills</div>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Machine Learning</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Data Analytics</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Simulation Models</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Predictive Systems Design</span><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-header">
+          <span class="skill-group-icon">🚗</span>
+          <div class="skill-group-title">EV Systems Skills</div>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-name">Battery Pack Diagnostics</span><div class="skill-bar"><div class="skill-fill" style="width:86%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Energy Management Systems</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Battery Health Monitoring</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Safety Engineering</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Software-Driven Monitoring</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EV BATTERY DEGRADATION ATLAS ====== -->
+<section class="atlas-section section-pad" id="atlas">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Knowledge Asset</div>
+      <h2 class="section-title">EV Battery <span>Degradation Atlas</span></h2>
+    </div>
+    <p class="atlas-intro">A visual scientific map tracing the complete degradation journey of a lithium-ion battery — from early-stage subtle changes to advanced aging and safety-critical conditions. Understanding each stage enables targeted intervention strategies.</p>
+    <div class="atlas-rows">
+      <div class="atlas-row reveal">
+        <div class="atlas-stage early">
+          <div class="atlas-stage-label">Stage 01</div>
+          <div class="atlas-stage-name">Early-Stage Degradation</div>
+        </div>
+        <div class="atlas-indicators">
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>Minor SEI growth</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>Coulombic efficiency &gt; 99.5%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>Capacity loss &lt; 5%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>Electrolyte stable</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>No visible Li plating</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#22d3a5;"></div>SOH ≥ 95%</div>
+        </div>
+      </div>
+      <div class="atlas-row reveal">
+        <div class="atlas-stage mid">
+          <div class="atlas-stage-label">Stage 02</div>
+          <div class="atlas-stage-name">Mid-Life Battery Aging</div>
+        </div>
+        <div class="atlas-indicators">
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>SEI thickening observed</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>Capacity loss 5–20%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>Resistance growth 10–30%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>Cathode micro-cracking</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>SOH 80–95%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#0ea5e9;"></div>Performance decline visible</div>
+        </div>
+      </div>
+      <div class="atlas-row reveal">
+        <div class="atlas-stage advanced">
+          <div class="atlas-stage-label">Stage 03</div>
+          <div class="atlas-stage-name">Advanced Degradation Signs</div>
+        </div>
+        <div class="atlas-indicators">
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>Significant capacity fade</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>Li plating risk elevated</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>Electrolyte decomposition products</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>Gas generation detected</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>SOH 70–80%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#f97316;"></div>Power fade prominent</div>
+        </div>
+      </div>
+      <div class="atlas-row reveal">
+        <div class="atlas-stage critical">
+          <div class="atlas-stage-label">Stage 04</div>
+          <div class="atlas-stage-name">Thermal Instability / End-of-Life</div>
+        </div>
+        <div class="atlas-indicators">
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>Thermal runaway risk</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>Lithium dendrite formation</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>Severe resistance growth</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>Cell swelling / venting risk</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>SOH &lt; 70%</div>
+          <div class="atlas-indicator"><div class="atlas-indicator-dot" style="background:#ef4444;"></div>Replacement recommended</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== COLLABORATION ====== -->
+<section class="collab-section section-pad" id="collaboration">
+  <div class="container">
+    <div class="collab-inner reveal">
+      <div class="section-label" style="margin:0 auto 16px;">Open Collaboration</div>
+      <h2 class="section-title">Research <span>Collaboration</span></h2>
+      <p class="section-desc" style="margin:0 auto;">Open to collaboration with EV OEMs, battery manufacturers, research laboratories, universities, and AI-driven mobility startups working on battery health, safety, and predictive diagnostics.</p>
+      <div class="collab-orgs">
+        <span class="collab-org">EV OEMs</span>
+        <span class="collab-org">Battery Manufacturers</span>
+        <span class="collab-org">Research Laboratories</span>
+        <span class="collab-org">Universities & IITs</span>
+        <span class="collab-org">AI Mobility Startups</span>
+        <span class="collab-org">Battery Pack Makers</span>
+        <span class="collab-org">Safety Tech Companies</span>
+        <span class="collab-org">EV Fleet Operators</span>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="padding:14px 36px;font-size:1rem;">Collaborate With Us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section class="contact-section section-pad" id="contact">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <p class="section-desc">Reach out for research collaboration, industry partnerships, or to learn more about our battery health and diagnostics work.</p>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-left reveal-left">
+        <div class="contact-info-title">Research & Collaboration Enquiries</div>
+        <p class="contact-info-desc">Whether you're an OEM, research lab, battery startup, or R&D team — we welcome conversations about battery intelligence, diagnostics, and AI-driven EV safety systems.</p>
+        <div class="contact-people">
+          <div class="contact-person">
+            <div class="contact-person-name">Shilajit Das</div>
+            <div class="contact-person-role">Lead Researcher · NITK Surathkal, Metallurgical & Materials Engineering</div>
+            <div class="contact-detail"><span>📞</span><a href="tel:+918240307388">+91 82403 07388</a></div>
+            <div class="contact-detail"><span>✉️</span><a href="mailto:shilajit.me29@gmail.com">shilajit.me29@gmail.com</a></div>
+            <div class="contact-detail"><span>🎓</span><a href="mailto:shilajitdas.207mt006@nitk.edu.in">shilajitdas.207mt006@nitk.edu.in</a></div>
+          </div>
+          <div class="contact-person">
+            <div class="contact-person-name">Sudarshana Karkala</div>
+            <div class="contact-person-role">Co-Researcher · EV.ENGINEER™ · AI & EV Predictive Maintenance</div>
+            <div class="contact-detail"><span>📞</span><a href="tel:+919845561518">+91 98455 61518</a></div>
+            <div class="contact-detail"><span>✉️</span><a href="mailto:sudarshana.karkala@gmail.com">sudarshana.karkala@gmail.com</a></div>
+            <div class="contact-detail"><span>🔗</span><a href="https://www.linkedin.com/in/sudarshanakarkala/" target="_blank">linkedin.com/in/sudarshanakarkala</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right reveal-right">
+        <div class="contact-form">
+          <div class="form-title">Send a Message</div>
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name *</label>
+                <input class="form-input" type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="organization">Organization</label>
+                <input class="form-input" type="text" id="organization" name="organization" placeholder="Company / University" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject *</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="">Select a subject...</option>
+                <option>Research Collaboration</option>
+                <option>Industry Partnership</option>
+                <option>Battery Diagnostics Enquiry</option>
+                <option>AI & ML Battery Project</option>
+                <option>Academic Partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message *</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your project, research interest, or collaboration idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">Send Message →</button>
+          </form>
+          <div id="formSuccess" style="display:none;margin-top:16px;padding:16px;background:rgba(34,211,165,0.1);border:1px solid rgba(34,211,165,0.3);border-radius:10px;color:var(--accent-green);font-size:0.88rem;text-align:center;">
+            ✅ Message sent! We'll get back to you shortly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="margin-bottom:16px;">
+          <div class="nav-logo-icon">⚡</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-title">EV Battery Health & Diagnostics</span>
+            <span class="nav-logo-sub">Advanced Battery Research Platform</span>
+          </div>
+        </div>
+        <p class="footer-brand-desc">Built for advanced EV battery research, diagnostics, and intelligent monitoring systems. A deep-tech battery intelligence research platform designed to advance battery health science and industry collaboration.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sudarshanakarkala/" target="_blank" class="social-btn" title="LinkedIn">in</a>
+          <a href="#" class="social-btn" title="Google Scholar">GS</a>
+          <a href="#" class="social-btn" title="ResearchGate">RG</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Quick Links</div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#research" class="footer-link">Research</a>
+          <a href="#diagnostics" class="footer-link">Battery Diagnostics</a>
+          <a href="#aiml" class="footer-link">AI / ML</a>
+          <a href="#technology" class="footer-link">Technology Platforms</a>
+          <a href="#publications" class="footer-link">Publications</a>
+          <a href="#resources" class="footer-link">Resources</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Research Areas</div>
+        <div class="footer-links">
+          <a href="#degradation" class="footer-link">Battery Degradation</a>
+          <a href="#healthmonitoring" class="footer-link">Health Monitoring</a>
+          <a href="#aiml" class="footer-link">AI Analytics</a>
+          <a href="#industry" class="footer-link">Industry Apps</a>
+          <a href="#atlas" class="footer-link">Degradation Atlas</a>
+          <a href="#collaboration" class="footer-link">Collaboration</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <div class="footer-links">
+          <span class="footer-link" style="color:var(--text-primary);font-weight:600;">Shilajit Das</span>
+          <a href="tel:+918240307388" class="footer-link">+91 82403 07388</a>
+          <a href="mailto:shilajit.me29@gmail.com" class="footer-link">shilajit.me29@gmail.com</a>
+          <span class="footer-link" style="color:var(--text-primary);font-weight:600;margin-top:12px;display:block;">Sudarshana Karkala</span>
+          <a href="tel:+919845561518" class="footer-link">+91 98455 61518</a>
+          <a href="mailto:sudarshana.karkala@gmail.com" class="footer-link">sudarshana.karkala@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-note">Built for advanced EV battery research, diagnostics, and intelligent monitoring systems.</p>
+      <p class="footer-copy">© 2026 EV Battery Health & Diagnostics. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
