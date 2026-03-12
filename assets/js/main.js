@@ -245,5 +245,44 @@ if (navCta) {
   }, 2000);
 }
 
+// ---- Analytics Event Tracking ----
+function trackEvent(eventName, params = {}) {
+  if (typeof gtag === 'function') {
+    gtag('event', eventName, params);
+    // console.log('Analytics Event:', eventName, params); // Helpful for local testing
+  }
+}
+
+// Track clicks on elements with data-analytics attribute
+document.addEventListener('click', (e) => {
+  const target = e.target.closest('[data-analytics]');
+  if (target) {
+    const eventValue = target.getAttribute('data-analytics');
+    trackEvent('click_action', {
+      action_label: eventValue,
+      element_type: target.tagName.toLowerCase(),
+      link_url: target.href || 'none'
+    });
+  }
+});
+
+// Specific tracking for theme toggle
+themeToggle.addEventListener('click', () => {
+  const newTheme = html.getAttribute('data-theme');
+  trackEvent('theme_change', {
+    mode: newTheme
+  });
+});
+
+// Specific tracking for form interaction (success)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    trackEvent('form_submission', {
+      form_id: 'contact_form'
+    });
+  });
+}
+
 console.log('%c⚡ EV Battery Health & Diagnostics', 'color:#0ea5e9;font-size:18px;font-weight:bold;');
 console.log('%cAdvanced Lithium-ion Battery Degradation Research Platform', 'color:#14b8a6;font-size:12px;');
